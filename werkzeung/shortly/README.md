@@ -8,3 +8,5 @@ This folder is not a package. This is just a way of structuring where to keep wh
 
 
 [Go Back to home of this Repository](../../)
+
+### There are also specific errors that are called HttpException, which are also WSGI application by themselves.
