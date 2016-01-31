@@ -1,0 +1,24 @@
+<!-- <!DOCTYPE html>
+ --><html data-ng-app>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+		
+
+		<!-- create list and iterate through it -->
+		<body data-ng-init="people=[{name:'Raj Shocker', city:'oakland'}, {name:'Cholendra Tripathi', city:'chicago'}, {name:'Chayankar Chaulagai', city:'cow town'}]">
+		<ul>
+			<li data-ng-repeat="person in people">{{person.name}} from {{person.city}}</li>
+		</ul>
+		</div>
+		<!-- using filters -->
+		<!-- Syntax: {{databinding | filter}} -->
+		<!-- example, take input and as input is taken, order a list alphabetically: -->
+		Search from list: <input data-ng-model="nameText" type="text"/>
+		<div>
+			<ol>
+				<li data-ng-repeat="peop in people | filter:nameText | orderBy:'city'">{{peop.name}}</li>
+			</ol>
+		</div>
+
+	</body>
+</html>
